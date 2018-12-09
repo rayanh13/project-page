@@ -1,0 +1,89 @@
+/*
+ First External CSS Stylesheet
+ */
+  #grey {
+    background-color: white;
+    width: 100%;
+  }
+  
+  body {
+    background: lightgrey;
+  }
+
+  .navbar-inverse-test{
+    background-color: white;
+    border-color: white;
+  }
+
+  .navbar-header{
+      margin-right:-15px;
+      margin-left:-15px
+    }
+
+    /*
+ * Static: Default positioning
+ */
+
+.box-set {
+  position: relative;
+  height: 448px;
+  width: 777px;
+  background: white;
+  margin-left: 50px;
+  margin-block-start: 50px;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+
+}
+
+.box-set-1 {
+  position: relative;
+  height: 404px;
+  width: 410px;
+  background: white;
+  margin-left: 51px;
+  margin-block-start: 49px;
+  padding-block-start: 5px;
+}
+
+.box-set-2 {
+  position: relative;
+  height: 448px;
+  width: 777px;
+  background: white;
+  margin-left: 260px;
+  margin-block-start: 12px;
+}
+
+#blue-header {
+  color:rgb(0, 128, 128);
+  margin-left: 10px;
+}
+
+
+
+
+
+#justify {
+  text-align: justify;
+  text-indent: 0em;
+  margin: 0 12px 10px;
+}
+
+img {
+  float: left;
+  margin: 0 20px 20px 0;
+  width: 150px;
+  height: 150px;
+}
+
+#img-id {
+  float: left;
+  margin: 0 20px 20px 0;
+  width: 150px;
+  height: 150px;
+}
