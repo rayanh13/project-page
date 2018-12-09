@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="UTF-8">
+
+
+ <!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+ <!-- Optional theme -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+ <!-- Latest compiled and minified JavaScript -->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+<style>
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    margin-inline-start: 45px;
+    margin-block-start: -18px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" style="margin-left: 50px; color: white; background-color: rgb(0, 128, 128); margin-left: 50px;" href="index.html">Lattitude</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="temp.html">Max Temperature</a></li>
+            <li><a href="humi.html">Humidity</a></li>
+            <li><a href="cloud.html">Cloudiness</a></li>
+            <li><a href="wind.html">Wind Speed</a></li>
+          </ul>
+        </li>
+        <li><a href="comp.html">Comparison</a></li>
+        <li><a href="data.html">Data</a></li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+  
+
+    <div class = "container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+
+                    <h2 id="blue-header">Summary: Latitude vs X.</h2>
+                    <hr>
+                    <img class="first image" src="Fig1.png" alt="first image" >
+                    <p class = "text">The purpose of this project was to analyze how weather changes as
+                        you get closer to the equator. To accomplish this analysis, we first pulled data 
+                        from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+                      </br>
+                    </br>
+                  
+                      After assembling the dataset, we used Matplotlib to plot various
+                        aspects of the weather vs. latitude. Factors we looked at included: temperature,
+                        cloudiness, wind speed, and humidity. This site provides the source data and
+                        visualizations created as part of the analysis, as well as explanations and 
+                        descriptions of any trends and correlations witnessed.
+                    </br>
+                  </br>
+                </br>
+              </br>
+            </br>
+          </br>
+        </br>
+                      </p>
+                    <br>        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                        <div class="panel-body">                                    
+                            <h2 id="blue-header">Visualizations</h2>
+                            <hr>
+
+                            <div class="row" >
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="temp.html"><img class = "img img-responsive" src="Fig1.png" style="width:100%" alt=""></a></div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="humi.html"><img class = "img img-responsive" src="Fig2.png" style="width:100%" alt=""></a></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="cloud.html"><img class = "img img-responsive" src="Fig3.png" style="width:100%" alt=""></a></div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="wind.html"><img class = "img img-responsive" src="Fig4.png" style="width:100%" alt=""></a></div>
+                            </div>
+                                
+                        </div>
+                </div>     
+            </div>    
+    </div>
+
+
+
+</body>
+</html>
